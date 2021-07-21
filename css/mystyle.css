@@ -1,39 +1,17 @@
-/*Variables generales para modificar colores y valores*/
-:root {
-    --main-bg-color: rgb(76, 59, 225, 0.9);
-    --container-background-color: white;
-    --footer-background-color: black;
-    --header-background-color: rgba(30, 32, 97, 0.9);
-    --font-color: rgb(0, 2, 95, 1);
-    --button-color-main: rgb(67, 142, 240);
-    --button-color-hover: rgb(52, 65, 82);
-    --button-widht: 90px;
-    --button-height: 40px;
-    --transition-hover: 0.2s;
-    --vh-container: 81vh;
-}
-.vh-container{
-    height: var(--vh-container);
-}
-/*Atributos generales para modificar toda la página*/
-body{
-    background-color: var(--main-bg-color);
-    color: var(--font-color);
-}
-nav{
-    background-color: var(--header-background-color);
-}
-footer{
-    background-color: var(--footer-background-color);
-}
-.center{
-    margin: 0 auto;
-}
 /*container del form con efecto en el hover*/
+.main-container-lista{
+    height: auto;
+    width: 30em;
+    background: var(--container-background-color);
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .5s ease;
+}
+.main-container-lista:hover {
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
 .main-container {
     padding: 20px;
-    max-width: 45em;
-    min-width: 290px;
+    min-width: 25em;
     height: 420px;
     background: var(--container-background-color);
     box-shadow: 20px 20px rgba(0,0,0,.15);
@@ -99,12 +77,6 @@ footer{
     text-align: center;
  
 }
-footer{
-    background-color: var(--footer-background-color);
-    color: white;
-    min-height: 50px;
-}
-
 /*Este media query soluciona los problemas para los dispositivos con pantalla chica*/
 @media (max-width: 768px) {
     .main-container {
@@ -125,7 +97,4 @@ footer{
     .nav-button:first-child{
         margin-right: 0px;
     }
-}
-@media (max-height: 768px) {
-   
 }
