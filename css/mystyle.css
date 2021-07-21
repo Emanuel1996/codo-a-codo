@@ -1,7 +1,8 @@
 /*container del form con efecto en el hover*/
 .main-container-lista{
     height: auto;
-    width: 30em;
+    max-width: 30em;
+    min-width: 30em;
     background: var(--container-background-color);
     box-shadow: 20px 20px rgba(0,0,0,.15);
     transition: all .5s ease;
@@ -88,6 +89,9 @@
     .nav-button{
         text-align: center;
     }
+    .main-container-lista{
+        min-width: 20em;
+    }
 }
 @media (max-width: 1000px) {
     .nav-button{
@@ -98,3 +102,9 @@
         margin-right: 0px;
     }
 }
+@media (max-width: 424px) {
+    .main-container-lista{
+        min-width: 15em;
+    }
+}
+
