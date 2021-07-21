@@ -11,7 +11,7 @@
 }
 .main-container {
     padding: 20px;
-    min-width: 25em;
+    min-width: 15em;
     height: 420px;
     background: var(--container-background-color);
     box-shadow: 20px 20px rgba(0,0,0,.15);
